@@ -1,0 +1,44 @@
+﻿<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Fake Shop</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<header>
+    <h1>🛒 Fake Shop</h1>
+</header>
+
+<section class="controls">
+    <select id="categoryFilter">
+        <option value="all">Все категории</option>
+        <option value="electronics">Электроника</option>
+        <option value="jewelery">Украшения</option>
+        <option value="men's clothing">Мужская одежда</option>
+        <option value="women's clothing">Женская одежда</option>
+    </select>
+    <input type="search" id="searchBox" placeholder="Поиск товара...">
+</section>
+
+<main>
+    <div id="products">Загрузка...</div>
+</main>
+
+<aside id="cart">
+    <h2>Корзина</h2>
+    <p>Товаров: <span id="cartCount">0</span></p>
+    <p>Сумма: $<span id="cartTotal">0.00</span></p>
+    <ul id="cartItems"></ul>
+</aside>
+
+<footer>
+    <p>© 2025 Fake Shop | Данные товаров: <a href="https://fakestoreapi.com/" target="_blank">Fake Store API</a></p>
+</footer>
+
+<script src="js/cart.js"></script>
+<script src="js/products.js"></script>
+<script src="js/filters.js"></script>
+<script src="js/app.js"></script>
+</body>
+</html>

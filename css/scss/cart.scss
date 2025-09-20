@@ -1,0 +1,46 @@
+﻿@import "variables";
+
+#cart {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 280px;
+  height: 100%;
+  background: white;
+  border-left: 2px solid #ddd;
+  padding: 15px;
+  overflow-y: auto;
+  box-shadow: -2px 0 6px rgba(0,0,0,0.1);
+
+  h2 {
+    margin-top: 0;
+    font-size: 18px;
+  }
+
+  p {
+    margin: 5px 0;
+  }
+
+  ul {
+    list-style: none;
+    padding: 0;
+    margin: 10px 0 0 0;
+  }
+
+  li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 6px 0;
+    border-bottom: 1px solid #eee;
+    font-size: 14px;
+  }
+
+  .removeBtn {
+    background: none;
+    border: none;
+    color: $danger;
+    cursor: pointer;
+    font-size: 14px;
+  }
+}

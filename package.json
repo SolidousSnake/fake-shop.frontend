@@ -1,0 +1,16 @@
+{
+  "name": "fake-shop.frontend",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "sass": "sass --watch css/scss:css",
+    "dev": "sass --watch css/scss/style.scss css/style.css",
+    "build": "sass css/scss/style.scss css/style.css --style=compressed"
+  },
+  "private": true,
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": ""
+}
