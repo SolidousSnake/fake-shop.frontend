@@ -2,6 +2,7 @@
   "name": "test-ts",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://solidoussnake.github.io/fake-shop.frontend/",
   "dependencies": {
     "@react-google-maps/api": "^2.20.7",
     "@reduxjs/toolkit": "^2.9.0",
