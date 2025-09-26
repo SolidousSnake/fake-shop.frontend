@@ -1,0 +1,144 @@
+﻿.cart-open-btn {
+  position: fixed;
+  top: 15px;
+  right: 15px;
+  padding: 12px 20px;
+  background: #007bff;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background 0.2s, transform 0.1s;
+
+  &:hover {
+    background: #0056b3;
+    transform: scale(1.05);
+  }
+
+  &:active {
+    transform: scale(0.95);
+  }
+}
+
+.cart-close-btn {
+  display: block;
+  margin: 10px auto;
+  padding: 8px 12px;
+  background: #ff4444;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background 0.2s, transform 0.1s;
+
+  &:hover {
+    background: #cc0000;
+    transform: scale(1.05);
+  }
+
+  &:active {
+    transform: scale(0.95);
+  }
+}
+
+.checkout-btn {
+  padding: 12px 20px;
+  margin-top: 50px;
+  color: white;
+  background: #30a728;
+  border: none;
+  border-radius: 6px;
+  font-size: 16px;
+  cursor: pointer;
+  font-weight: 500;
+  transition: background 0.2s, transform 0.1s;
+
+  &:hover {
+    background: #218838;
+    transform: scale(1.05);
+  }
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+li {
+  padding: 8px 0;
+  border-bottom: 1px solid #ddd;
+}
+
+.cart {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 380px;
+  height: 100%;
+  background: #fff;
+  box-shadow: -2px 0 6px rgba(0,0,0,0.1);
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.3s ease-in-out;
+  z-index: 999;
+
+  &.closed {
+    transform: translateX(100%);
+  }
+
+  .cart-content {
+    padding: 15px;
+    flex-grow: 1;
+    overflow-y: auto;
+  }
+
+  .quantity-btn,
+  .remove-btn {
+    width: 36px;
+    height: 36px;
+    border-radius: 6px;
+    border: 1px solid #ddd;
+    background: #f8f8f8;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    cursor: pointer;
+    margin: 0 3px;
+    transition: all 0.2s;
+
+    &:hover {
+      transform: scale(1.05);
+    }
+
+    &:active {
+      transform: scale(0.95);
+    }
+  }
+
+  .remove-btn {
+    border-color: #ff4444;
+    color: #ff4444;
+
+    &:hover {
+      background: #ff4444;
+      color: #fff;
+    }
+  }
+
+  @media (max-width: 560px) {
+    width: 100%;
+    max-width: 100vw;
+    height: auto;
+    box-shadow: none;
+
+    .cart-content {
+      max-height: 80vh;
+      overflow-y: auto;
+      margin-top: 10px;
+    }
+  }
+}

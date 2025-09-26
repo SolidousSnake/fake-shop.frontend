@@ -1,0 +1,40 @@
+.notfound {
+  text-align: center;
+  padding: 50px 20px;
+}
+.notfound h1 {
+  font-size: 36px;
+  margin-bottom: 15px;
+  color: #ff4444;
+}
+.notfound p {
+  font-size: 18px;
+}
+.notfound a {
+  display: inline-block;
+  padding: 12px 20px;
+  background: #007bff;
+  color: white;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: 500;
+  margin-top: 15px;
+  transition: background 0.2s;
+}
+.notfound a:hover {
+  background: #0056b3;
+}
+
+@media (max-width: 768px) {
+  .notfound {
+    padding: 30px 10px;
+  }
+  .notfound h1 {
+    font-size: 28px;
+  }
+  .notfound p {
+    font-size: 16px;
+  }
+}
+
+/*# sourceMappingURL=notfound.css.map */

@@ -1,0 +1,21 @@
+﻿.home {
+  padding: 20px;
+
+  .filters {
+    margin-bottom: 20px;
+  }
+
+  main {
+    margin-top: 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  .home {
+    padding: 10px;
+
+    .filters {
+      margin-bottom: 15px;
+    }
+  }
+}
